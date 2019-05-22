@@ -9,7 +9,7 @@ import {
 
 // Render application todos based on filters
 const renderTodos = () => {
-    const todoEl = document.querySelector('#todos')
+    const todoEl = document.getElementById('todos')
     const {
         searchText,
         hideCompleted

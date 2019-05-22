@@ -4,14 +4,14 @@ import { createTodo, loadTodos } from './todos'
 
 renderTodos()
 
-document.querySelector('#search-text').addEventListener('input', (e) => {
+document.getElementById('search-text').addEventListener('input', (e) => {
     setFilters({
         searchText: e.target.value
     })
     renderTodos()
 })
 
-document.querySelector('#new-todo').addEventListener('submit', (e) => {
+document.getElementById('new-todo').addEventListener('submit', (e) => {
     const text = e.target.elements.text.value.trim()
     e.preventDefault()
 
@@ -22,7 +22,7 @@ document.querySelector('#new-todo').addEventListener('submit', (e) => {
     }
 })
 
-document.querySelector('#hide-completed').addEventListener('change', (e) => {
+document.getElementById('hide-completed').addEventListener('change', (e) => {
     setFilters({
         hideCompleted: e.target.checked
     })
